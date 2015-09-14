@@ -1,0 +1,172 @@
+/*! Building Interfaces HTML5 template */
+
+
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+body{
+    font-family:'futura', 'arial', 'helvetica', sans-serif;
+    font-size:20px;
+}
+    
+.wrapper{
+    width:960px;
+    margin:auto;
+    background-color: pink;
+    min-height: 200px;
+}
+
+
+h1{
+    color: azure;
+    margin-top: 0;
+    padding-top: 25px;
+    background-color:palevioletred;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+figure{
+ border:3px dotted palevioletred;
+ backgroud:white;
+ height:1250px;
+ float:right;
+}
+
+figcaption{
+    color: azure;
+    text-align: center;  
+    font-family: 'Dancing Script', cursive;
+}
+h2{
+    color: azure;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;}
+h3{
+   text-align:center;
+   font-family: 'Dancing Script', cursive;
+}
+
+h4{ 
+    color:beige;
+    font-weight:100;
+    text-align:center;
+   font-family: 'Roboto', sans-serif;
+}
+
+}
+figure img{
+ border: :5px solid white;
+}
+
+.photo{
+        max-width: 500px;
+        border:1px solid pink;
+        margin:12px;
+        box-shadow: 3px 3px 3px #000;
+        
+    
+    }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Mobile */
+@media only screen and (min-width: 480px) {}
+/* Intermediate */
+@media only screen and (min-width: 768px) {}
+/* Wide */
+@media only screen and (min-width: 1140px) {}
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
